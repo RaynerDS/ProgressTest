@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProgressTest.NewPage1"
+             Title="NewPage1"
+             BackgroundColor="#242526">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Frame BorderColor="DarkOrange" CornerRadius="80" HasShadow="False" WidthRequest="100" HeightRequest="100" Margin="0,20,0,0">
+                <Image Source="Image/pic1.png" Aspect="AspectFill" />
+            </Frame>
+            <Label Text="Vincent Van Gogh" FontAttributes="Italic" FontSize="30" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="00"/>
+            <Label Text="Dutch, 1853 - 1890" FontAttributes="Bold" FontSize="12" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0"/>
+            <Label Text="Vincent van Gogh (born March 30, 1853, Zundert, Netherlands—died July 29..." FontAttributes="Bold" FontSize="12" TextColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="0"/>
+
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Labels and Numbers for Dutch, 1853 - 1890 -->
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="  $7.5m" FontSize="14" TextColor="White" />
+                    <Label Grid.Row="1" Text="   Record   " FontAttributes="Bold" FontSize="12" TextColor="White" />
+                </Grid>
+
+                <!-- Labels and Numbers for Record Average -->
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="   $3.5m" FontSize="14" TextColor="White" />
+                    <Label Grid.Row="1" Text="   Average   " FontSize="12" TextColor="White" />
+                </Grid>
+
+                <!-- Labels and Numbers for General -->
+                <Grid Grid.Column="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="  +598%" FontSize="14" TextColor="White" />
+                    <Label Grid.Row="1" Text="   General   " FontSize="12" TextColor="White" />
+                </Grid>
+
+                <!-- Labels and Numbers for Items -->
+                <Grid Grid.Column="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Text="    12" FontSize="14" TextColor="White" />
+                    <Label Grid.Row="1" Text="   Items   " FontSize="12" TextColor="White" />
+                </Grid>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Frame BackgroundColor="#242526" Grid.Row="0" Grid.Column="0" CornerRadius="10" HasShadow="False" Margin="0,0,10,10" BorderColor="Transparent">
+                    <StackLayout>
+                        <Image Source="Image/pic2.png" Aspect="AspectFill" Margin="0,0,0,20"/>
+                        <Label Text="Town" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="RM100,000" TextColor="Grey" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#242526" Grid.Row="0" Grid.Column="1" CornerRadius="10" HasShadow="False" Margin="0,0,0,10" BorderColor="Transparent">
+                    <StackLayout>
+                        <Image Source="Image/pic3.png" Aspect="AspectFill" Margin="0,0,0,20"/>
+                        <Label Text="Island" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="RM100,000" TextColor="Grey" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#242526" Grid.Row="1" Grid.Column="0" CornerRadius="10" HasShadow="False" Margin="0,10,0,0" BorderColor="Transparent">
+                    <StackLayout>
+                        <Image Source="Image/pic4.png" Aspect="AspectFill" Margin="0,0,0,60"/>
+                        <Label Text="Grass Lands" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="RM100,000" TextColor="Grey" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#242526" Grid.Row="1" Grid.Column="1" CornerRadius="10" HasShadow="False" Margin="10,0,0,0" BorderColor="Transparent">
+                    <StackLayout>
+                        <Image Source="Image/pic5.png" Aspect="AspectFill" Margin="0,0,0,20"/>
+                        <Label Text="Flower Pot" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="RM100,000" TextColor="Grey" HorizontalOptions="Center" />
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
